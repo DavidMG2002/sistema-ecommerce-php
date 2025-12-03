@@ -1,0 +1,71 @@
+<!-- Aside filtros -->
+<aside id="filtro-aside" class="hidden md:block fixed md:sticky top-0 md:top-20 left-0 bg-white shadow-lg p-5 overflow-y-auto border-r border-gray-200 h-screen md:h-[calc(100vh-5rem)]" aria-label="Filtros de productos">
+
+    <!-- Botón de cierre en móvil -->
+    <button id="cerrar-filtro" class="md:hidden absolute top-4 right-4 text-2xl text-gray-600" aria-label="Cerrar filtros">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <!-- Sección colores -->
+    <section class="mb-6 mt-10 md:mt-0">
+        <h2 class="font-semibold mb-6">Color</h2>
+
+        <div class="flex flex-wrap items-center gap-4" role="group" aria-label="Filtros por color">
+            <div class="flex flex-col items-center">
+                <button class="color-btn w-8 h-8 rounded-full bg-blue-600 border-2 border-blue-600 flex items-center justify-center" data-color="Azul" aria-label="Color azul seleccionado"></button>
+            </div>
+            <div class="flex flex-col items-center">
+                <button class="color-btn w-8 h-8 rounded-full bg-white border-2 border-gray-300" data-color="Blanco" aria-label="Color blanco"></button>
+            </div>
+            <div class="flex flex-col items-center">
+                <button class="color-btn w-8 h-8 rounded-full bg-gray-400 border-2 border-gray-400" data-color="Gris" aria-label="Color gris"></button>
+            </div>
+            <div class="flex flex-col items-center">
+                <button class="color-btn w-8 h-8 rounded-full bg-orange-400 border-2 border-orange-400" data-color="Naranja" aria-label="Color naranja"></button>
+            </div>
+            <div class="flex flex-col items-center">
+                <button class="color-btn w-8 h-8 rounded-full bg-black border-2 border-black" data-color="Negro" aria-label="Color negro"></button>
+            </div>
+            <div class="flex flex-col items-center">
+                <button class="color-btn w-8 h-8 rounded-full bg-green-600 border-2 border-green-600" data-color="Verde" aria-label="Color verde"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección precio -->
+    <section class="mt-6">
+        <button class="flex justify-between items-center w-full font-semibold text-gray-800 focus:outline-none"
+            type="button" aria-controls="precio-options" aria-expanded="false" onclick="document.getElementById('precio-options').classList.toggle('hidden')">
+            <span>Precio</span>
+            <i class="fa-solid fa-chevron-down text-xs"></i>
+        </button>
+
+        <hr class="my-2 border-gray-300">
+
+        <form id="precio-options" class="space-y-4" aria-label="Filtro por rango de precio">
+            <fieldset>
+                <!-- Inputs de precio -->
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-0">
+                    <div class="flex items-center border border-gray-300 p-2 rounded w-full sm:w-[45%]">
+                        <label for="minPrice" class="sr-only">Precio mínimo</label>
+                        <span class="mr-1 text-gray-600">$</span>
+                        <input id="minPrice" type="number" min="0" max="220000" value="0" class="w-full outline-none text-gray-800">
+                    </div>
+
+                    <span class="text-gray-600 text-center sm:text-left">a</span>
+
+                    <div class="flex items-center border border-gray-300 p-2 rounded w-full sm:w-[45%]">
+                        <label for="maxPrice" class="sr-only">Precio máximo</label>
+                        <span class="mr-1 text-gray-600">$</span>
+                        <input id="maxPrice" type="number" min="0" max="220000" value="220000" class="w-full outline-none text-gray-800">
+                    </div>
+                </div>
+
+                <!-- Botón aplicar -->
+                <button class="bg-black text-white font-semibold w-full py-2 rounded hover:bg-gray-800 transition mt-4">
+                    Aplicar
+                </button>
+            </fieldset>
+        </form>
+    </section>
+</aside>

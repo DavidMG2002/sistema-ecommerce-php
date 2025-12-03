@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Font and Tailwind -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@350;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="flex flex-col min-h-screen font-poppins bg-white">
+    <header id="header">
+        <!--Llamado del header desde el header.html-->
+    </header>
+
+    <div class="flex mt-20">
+        <!--Llamado de la barra desde barra.html-->
+        <aside id="barra_lateral"></aside>
+
+        <main class="flex-1 p-4">
+            <section class="flex justify-center flex-wrap gap-y-28 gap-x-6 p-6 mt-6 mr-6 mb-6" aria-label="Listado de productos">
+
+                <!-- Wallet 1 -->
+                <article class="relative p-[2px] w-[350px] h-[600px] flex-shrink-0 sm:w-[280px] sm:h-[480px] md:w-[450px] md:h-[600px]">
+                    <div class="bg-gray-50 h-full w-full flex flex-col justify-between items-center relative overflow-hidden">
+                        <div class="flex-grow flex items-center justify-center">
+                            <img src="#####" alt="Imagen 1" class="object-contain w-[275px] h-[525px]" />
+                        </div>
+                    </div>
+                    <div class="text-center mb-6">
+                        <h2 class="text-black text-lg font-semibold">Planificador semanal/cuaderno</h2>
+                        <p class="text-black text-md">$20.00</p>
+                    </div>
+                </article>
+
+                <!-- Wallet 2 -->
+                <article class="relative p-[2px] w-[350px] h-[600px] flex-shrink-0 sm:w-[280px] sm:h-[480px] md:w-[450px] md:h-[600px]">
+                    <div class="bg-gray-50 h-full w-full flex flex-col justify-between items-center relative overflow-hidden">
+                        <div class="flex-grow flex items-center justify-center">
+                            <img src="#####" alt="Imagen 2" class="object-contain w-[275px] h-[525px]" />
+                        </div>
+                    </div>
+                    <div class="text-center mb-6">
+                        <h2 class="text-black text-lg font-semibold">Temporizador</h2>
+                        <p class="text-black text-md">$15.00</p>
+                    </div>
+                </article>
+
+                <!-- Wallet 3 -->
+                <article class="relative p-[2px] w-[350px] h-[600px] flex-shrink-0 sm:w-[280px] sm:h-[480px] md:w-[450px] md:h-[600px]">
+                    <div class="bg-gray-50 h-full w-full flex flex-col justify-between items-center relative overflow-hidden">
+                        <div class="flex-grow flex items-center justify-center">
+                            <img src="#####" alt="Imagen 3" class="object-contain w-[275px] h-[525px]" />
+                        </div>
+                    </div>
+                    <div class="text-center mb-6">
+                        <h2 class="text-black text-lg font-semibold">Tablero kanban</h2>
+                        <p class="text-black text-md">$25.00</p>
+                    </div>
+                </article>
+
+                <!-- Wallet 4 -->
+                <article class="relative p-[2px] w-[350px] h-[600px] flex-shrink-0 sm:w-[280px] sm:h-[480px] md:w-[450px] md:h-[600px]">
+                    <div class="bg-gray-50 h-full w-full flex flex-col justify-between items-center relative overflow-hidden">
+                        <div class="flex-grow flex items-center justify-center">
+                            <img src="#####" alt="Imagen 4" class="object-contain w-[275px] h-[525px]" />
+                        </div>
+                    </div>
+                    <div class="text-center mb-6">
+                        <h2 class="text-black text-lg font-semibold">Soporte para portatil</h2>
+                        <p class="text-black text-md">$30.00</p>
+                    </div>
+                </article>
+
+                <!-- Wallet 5 -->
+                <article class="relative p-[2px] w-[350px] h-[600px] flex-shrink-0 sm:w-[280px] sm:h-[480px] md:w-[450px] md:h-[600px]">
+                    <div class="bg-gray-50 h-full w-full flex flex-col justify-between items-center relative overflow-hidden">
+                        <div class="flex-grow flex items-center justify-center">
+                            <img src="#####" alt="Imagen 5" class="object-contain w-[275px] h-[525px]" />
+                        </div>
+                    </div>
+                    <div class="text-center mb-6">
+                        <h2 class="text-black text-lg font-semibold">Lampara de Escritorio</h2>
+                        <p class="text-black text-md">$40.00</p>
+                    </div>
+                </article>
+
+                <!-- Wallet 6 -->
+                <article class="relative p-[2px] w-[350px] h-[600px] flex-shrink-0 sm:w-[280px] sm:h-[480px] md:w-[450px] md:h-[600px]">
+                    <div class="bg-gray-50 h-full w-full flex flex-col justify-between items-center relative overflow-hidden">
+                        <div class="flex-grow flex items-center justify-center">
+                            <img src="#####" alt="Imagen 6" class="object-contain w-[275px] h-[525px]" />
+                        </div>
+                    </div>
+                    <div class="text-center mb-6">
+                        <h2 class="text-black text-lg font-semibold">Organizador de Escritorio</h2>
+                        <p class="text-black text-md">$50.00</p>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+    </div>
+
+    <div id="waicon"></div>
+
+    <footer id="footer">
+        <!--Llamado del footer desde el footer.html-->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../javascript/index.js" defer></script>
+    <script src="../javascript/include.js" defer></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
