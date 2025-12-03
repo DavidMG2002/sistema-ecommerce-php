@@ -1,0 +1,26 @@
+# Archivos de configuración sensibles
+php/config.php
+
+# Carpetas del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos temporales
+*.log
+*.tmp
+*.temp
+
+# Node modules (si usas)
+node_modules/
+
+# Archivos de caché
+.cache/
+*.cache
